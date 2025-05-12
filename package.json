@@ -1,0 +1,40 @@
+{
+  "name": "indikator",
+  "version": "0.1.0",
+  "description": "indikator web page",
+  "scripts": {
+    "clean": "rm -rf src/.observablehq/cache docs/docs",
+    "build": "observable build ; cp -r extra/. docs/",
+    "dev": "observable preview",
+    "deploy": "observable deploy",
+    "observable": "observable"
+  },
+  "dependencies": {
+    "@observablehq/framework": "latest",
+    "@wavedrom/doppler": "^1.11.0",
+    "d3-dsv": "^3.0.1",
+    "d3-time-format": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "main": "observablehq.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "esp-web-tools": "^10.1.0",
+    "esptool-js": "^0.5.4",
+    "improv-wifi-serial-sdk": "^2.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drom/indikator.git"
+  },
+  "author": "Aliaksei Chapyzhenka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drom/indikator/issues"
+  },
+  "homepage": "https://github.com/drom/indikator#readme"
+}
